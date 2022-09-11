@@ -11,4 +11,24 @@
     justify-content: space-between;
     align-items: center;
   }
+  .menu-show {
+    color: #fff;
+    list-style: none;
+    position: absolute;
+    top: 105px;
+    background: $yellow;
+    width: 100%;
+    transform: scale(1, 1);
+    transition: transform 500ms ease;
+    transform-origin: top;
+    li {
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #000;
+    }
+  }
+  .menu-close {
+    transform: scale(1, 0);
+    transform-origin: top;
+  }
 }
