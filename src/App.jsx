@@ -6,7 +6,7 @@ import "./styles/app.scss";
 // Components
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-// import Products from "./components/Products";
+import Products from "./components/Products";
 // import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
 
@@ -15,6 +15,7 @@ const App = () => {
     <div className="app-main">
       <Navbar />
       <Home />
+      <Products />
     </div>
   );
 };

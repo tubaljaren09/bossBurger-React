@@ -9,8 +9,8 @@ $yellow: #dac404;
 .app-main {
   width: 100%;
   height: 100vh;
-  background: red;
 
   @import "./navbar.scss";
   @import "./home.scss";
+  @import "./products.scss";
 }
