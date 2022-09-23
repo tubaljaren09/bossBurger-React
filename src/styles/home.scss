@@ -2,7 +2,7 @@
   background: url("../assets/images/home-bg.png") no-repeat center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 500px;
   .home-container {
     width: 80%;
     margin: auto;
@@ -34,5 +34,22 @@
         font-size: 17px;
       }
     }
+  }
+}
+@media (min-width: 650px) {
+  .home-main .home-container {
+    flex-direction: row;
+  }
+}
+@media (min-width: 800px) {
+  .home-main .home-container .greetings h1 {
+    font-size: 60px;
+  }
+  .home-main .home-container .greetings p {
+    font-size: 25px;
+  }
+  .home-main .home-container img {
+    width: 300px;
+    height: auto;
   }
 }

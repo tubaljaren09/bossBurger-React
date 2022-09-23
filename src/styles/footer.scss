@@ -20,3 +20,9 @@
     }
   }
 }
+@media (min-width: 480px) {
+  .footer-main .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

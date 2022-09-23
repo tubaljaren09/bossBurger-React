@@ -7,22 +7,41 @@
     width: 80%;
     margin: auto;
     height: 100%;
-    color: $yellow;
     padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    .burger {
-      width: auto;
-      height: auto;
-      border: 1px solid $yellow;
-      padding: 20px;
-      text-align: center;
-      .price {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    color: #fff;
+    h1 {
+      margin-bottom: 30px;
+      span {
+        color: $yellow;
       }
     }
+    .burger-container {
+      color: $yellow;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .burger {
+        width: auto;
+        height: auto;
+        border: 1px solid $yellow;
+        padding: 20px;
+        text-align: center;
+        .price {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 550px) {
+  .products-main .products-container .burger-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+  }
+  .products-main .products-container .burger-container .burger {
+    min-width: 180px;
   }
 }

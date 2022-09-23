@@ -10,6 +10,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
+    .navbar {
+      display: none;
+    }
   }
   .menu-show {
     color: #fff;
@@ -30,5 +34,18 @@
   .menu-close {
     transform: scale(1, 0);
     transform-origin: top;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-main .navbar-container .burger-icon {
+    display: none;
+  }
+  .navbar-main .navbar-container .navbar {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .navbar-main .navbar-container .navbar li {
+    font-size: 18px;
   }
 }
